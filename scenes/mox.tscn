@@ -1,0 +1,140 @@
+[gd_scene format=3 uid="uid://iio6wjhj3byv"]
+
+[ext_resource type="Script" uid="uid://vm4nnjx6c0nj" path="res://scripts/mox.gd" id="1_rvhlb"]
+[ext_resource type="Texture2D" uid="uid://dssnw6v2ei62e" path="res://assets/Knight_1/Idle.png" id="2_534sx"]
+[ext_resource type="Texture2D" uid="uid://d1wb060pfkajn" path="res://assets/Knight_1/Jump.png" id="3_6bla5"]
+[ext_resource type="Texture2D" uid="uid://bpqesc3mwl22x" path="res://assets/Knight_1/Run.png" id="4_v8udu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jlnuv"]
+atlas = ExtResource("2_534sx")
+region = Rect2(216, 0, 72, 85)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qhfgl"]
+atlas = ExtResource("3_6bla5")
+region = Rect2(0, 0, 80, 86)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k1yem"]
+atlas = ExtResource("3_6bla5")
+region = Rect2(80, 0, 80, 86)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4tl6y"]
+atlas = ExtResource("3_6bla5")
+region = Rect2(160, 0, 80, 86)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_edtq5"]
+atlas = ExtResource("3_6bla5")
+region = Rect2(240, 0, 80, 86)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_purat"]
+atlas = ExtResource("3_6bla5")
+region = Rect2(320, 0, 80, 86)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qu65o"]
+atlas = ExtResource("3_6bla5")
+region = Rect2(400, 0, 80, 86)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0et2n"]
+atlas = ExtResource("4_v8udu")
+region = Rect2(0, 0, 71, 86)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_re42n"]
+atlas = ExtResource("4_v8udu")
+region = Rect2(71, 0, 71, 86)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eaxu2"]
+atlas = ExtResource("4_v8udu")
+region = Rect2(142, 0, 71, 86)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hslxe"]
+atlas = ExtResource("4_v8udu")
+region = Rect2(213, 0, 71, 86)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bue5c"]
+atlas = ExtResource("4_v8udu")
+region = Rect2(284, 0, 71, 86)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_swn4q"]
+atlas = ExtResource("4_v8udu")
+region = Rect2(355, 0, 71, 86)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a287r"]
+atlas = ExtResource("4_v8udu")
+region = Rect2(426, 0, 71, 86)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ilfm8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jlnuv")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qhfgl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k1yem")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4tl6y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_edtq5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_purat")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qu65o")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0et2n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_re42n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eaxu2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hslxe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bue5c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_swn4q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a287r")
+}],
+"loop": true,
+"name": &"run",
+"speed": 10.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rvhlb"]
+height = 60.0
+
+[node name="Mox" type="CharacterBody2D" unique_id=136343024]
+collision_layer = 3
+script = ExtResource("1_rvhlb")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=994277634]
+position = Vector2(0, -25)
+scale = Vector2(1.1463468, 0.9619368)
+sprite_frames = SubResource("SpriteFrames_ilfm8")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2025419186]
+position = Vector2(-9, -15)
+shape = SubResource("CapsuleShape2D_rvhlb")

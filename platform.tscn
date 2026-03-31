@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://nhu1712ygfbe"]
+
+[ext_resource type="Texture2D" uid="uid://ddi8spm51qq75" path="res://assets/Platforms/Brown Off.png" id="1_mi635"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s8bxr"]
+size = Vector2(99, 8)
+
+[node name="platform" type="AnimatableBody2D" unique_id=1552361312]
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=776705914]
+position = Vector2(59.25, -3.0000002)
+scale = Vector2(1.6718749, 1.875)
+texture = ExtResource("1_mi635")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=902409318]
+position = Vector2(8, -2)
+scale = Vector2(1.4999999, 2.1)
+texture = ExtResource("1_mi635")
+region_enabled = true
+region_rect = Rect2(0, 2.199173, 31.327366, 5.0687466)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1798339448]
+position = Vector2(35.5, -2)
+shape = SubResource("RectangleShape2D_s8bxr")
+one_way_collision = true
