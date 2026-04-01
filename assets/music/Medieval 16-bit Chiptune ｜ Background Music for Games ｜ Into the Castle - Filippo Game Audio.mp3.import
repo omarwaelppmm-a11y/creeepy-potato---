@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://3ktcko7s1peo"
+path="res://.godot/imported/Medieval 16-bit Chiptune ｜ Background Music for Games ｜ Into the Castle - Filippo Game Audio.mp3-134d2f3c0872059ab2e5be8f2b75f531.mp3str"
+
+[deps]
+
+source_file="res://assets/music/Medieval 16-bit Chiptune ｜ Background Music for Games ｜ Into the Castle - Filippo Game Audio.mp3"
+dest_files=["res://.godot/imported/Medieval 16-bit Chiptune ｜ Background Music for Games ｜ Into the Castle - Filippo Game Audio.mp3-134d2f3c0872059ab2e5be8f2b75f531.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

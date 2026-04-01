@@ -9,6 +9,7 @@
 [ext_resource type="Script" uid="uid://y23u6xqwx4xy" path="res://scare_trigger.gd" id="5_p57ef"]
 [ext_resource type="PackedScene" uid="uid://dew4suagrua6b" path="res://scenes/killzone.tscn" id="6_p57ef"]
 [ext_resource type="PackedScene" uid="uid://glii5oqjfxwn" path="res://scenes/slime.tscn" id="7_u5sy4"]
+[ext_resource type="AudioStream" uid="uid://u1j1rw6ar1x7" path="res://assets/music/A Lonely Cherry Tree 🌸 - Pix.mp3" id="10_vtaks"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
 texture = ExtResource("1_yqjtg")
@@ -373,31 +374,31 @@ texture = ExtResource("1_gee14")
 expand_mode = 2
 
 [node name="MooooooonThisOneIsGoood" type="Sprite2D" parent="background" unique_id=2080582496]
-position = Vector2(418, 132)
+position = Vector2(465, 132)
 scale = Vector2(0.43853024, 0.42083335)
 texture = ExtResource("1_0tnpc")
 
 [node name="MooooooonThisOneIsGoood2" type="Sprite2D" parent="background" unique_id=1045180123]
-position = Vector2(-219.00002, 137.00002)
+position = Vector2(-173.00002, 137)
 scale = Vector2(0.43853024, 0.42083335)
 texture = ExtResource("1_0tnpc")
 
 [node name="MooooooonThisOneIsGoood3" type="Sprite2D" parent="background" unique_id=124927634]
-position = Vector2(357, 446.49994)
+position = Vector2(402.00003, 446.49994)
 scale = Vector2(-0.35028186, -0.91190755)
 texture = ExtResource("1_0tnpc")
 region_enabled = true
 region_rect = Rect2(-9.299805, 347.88705, 1460.7427, 379.08548)
 
 [node name="MooooooonThisOneIsGoood4" type="Sprite2D" parent="background" unique_id=439725852]
-position = Vector2(324.00003, 787)
+position = Vector2(364.00003, 787)
 scale = Vector2(-0.35028186, -0.88288385)
 texture = ExtResource("1_0tnpc")
 region_enabled = true
 region_rect = Rect2(-9.299805, 347.88705, 1460.7427, 379.08548)
 
 [node name="MooooooonThisOneIsGoood5" type="Sprite2D" parent="background" unique_id=993708405]
-position = Vector2(318, 998.6369)
+position = Vector2(343.00003, 998.6369)
 scale = Vector2(-0.35028186, -0.9073533)
 texture = ExtResource("1_0tnpc")
 region_enabled = true
@@ -451,5 +452,9 @@ shape = SubResource("WorldBoundaryShape2D_u5sy4")
 position = Vector2(830, 1475)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1773934290]
+
+[node name="Background music" type="AudioStreamPlayer2D" parent="." unique_id=1733003357]
+stream = ExtResource("10_vtaks")
+autoplay = true
 
 [connection signal="body_entered" from="scare trigger" to="scare trigger" method="_on_body_entered"]
