@@ -11,6 +11,8 @@
 [ext_resource type="PackedScene" uid="uid://dew4suagrua6b" path="res://scenes/killzone.tscn" id="6_p57ef"]
 [ext_resource type="PackedScene" uid="uid://glii5oqjfxwn" path="res://scenes/slime.tscn" id="7_u5sy4"]
 [ext_resource type="AudioStream" uid="uid://u1j1rw6ar1x7" path="res://assets/music/A Lonely Cherry Tree 🌸 - Pix.mp3" id="10_vtaks"]
+[ext_resource type="AudioStream" uid="uid://dhcev0q0a52e" path="res://assets/music/20260402-174247.mp3" id="12_dinhu"]
+[ext_resource type="Script" uid="uid://bco5ugkv8ftcl" path="res://scripts/soundtrigger.gd" id="12_kvuet"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
 texture = ExtResource("1_yqjtg")
@@ -305,6 +307,9 @@ size = Vector2(63.625, 49)
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_u5sy4"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kvuet"]
+size = Vector2(88.75, 309.0625)
+
 [node name="Game" type="Node2D" unique_id=1259348440]
 metadata/_edit_horizontal_guides_ = [412.0, 1146.0]
 
@@ -521,5 +526,16 @@ position = Vector2(4703, 5)
 
 [node name="Slime5" parent="enemies" unique_id=447230105 instance=ExtResource("7_u5sy4")]
 position = Vector2(4877, 5)
+
+[node name="Soundtrigger" type="Area2D" parent="." unique_id=1772944678]
+script = ExtResource("12_kvuet")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Soundtrigger" unique_id=763153267]
+position = Vector2(2671, 1341)
+shape = SubResource("RectangleShape2D_kvuet")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Soundtrigger" unique_id=1664724792]
+position = Vector2(2673, 1335)
+stream = ExtResource("12_dinhu")
 
 [connection signal="body_entered" from="scare trigger" to="scare trigger" method="_on_body_entered"]

@@ -5,9 +5,9 @@
 [ext_resource type="Texture2D" uid="uid://d1wb060pfkajn" path="res://assets/Knight_1/Jump.png" id="3_6bla5"]
 [ext_resource type="Texture2D" uid="uid://bpqesc3mwl22x" path="res://assets/Knight_1/Run.png" id="4_v8udu"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_jlnuv"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_534sx"]
 atlas = ExtResource("2_534sx")
-region = Rect2(216, 0, 72, 85)
+region = Rect2(216, 0, 72, 86)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qhfgl"]
 atlas = ExtResource("3_6bla5")
@@ -65,11 +65,11 @@ region = Rect2(426, 0, 71, 86)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_jlnuv")
+"texture": SubResource("AtlasTexture_534sx")
 }],
 "loop": true,
 "name": &"idle",
-"speed": 10.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -129,12 +129,12 @@ collision_layer = 3
 script = ExtResource("1_rvhlb")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=994277634]
-position = Vector2(0, -25)
-scale = Vector2(1.1463468, 0.9619368)
+position = Vector2(-12, -16.000002)
+scale = Vector2(1.1606735, 0.9619368)
 sprite_frames = SubResource("SpriteFrames_ilfm8")
 animation = &"idle"
 autoplay = "idle"
+frame_progress = 0.53782254
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2025419186]
-position = Vector2(-9, -15)
 shape = SubResource("CapsuleShape2D_rvhlb")
