@@ -419,6 +419,11 @@ zoom = Vector2(2, 2)
 limit_bottom = 2200
 position_smoothing_enabled = true
 
+[node name="Background music" type="AudioStreamPlayer2D" parent="Mox" unique_id=1733003357]
+position = Vector2(-11, -26)
+stream = ExtResource("10_vtaks")
+autoplay = true
+
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=475233625]
 position = Vector2(121, 217)
 
@@ -450,20 +455,18 @@ shape = SubResource("WorldBoundaryShape2D_u5sy4")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1773934290]
 
-[node name="Background music" type="AudioStreamPlayer2D" parent="." unique_id=1733003357]
-position = Vector2(77, 989)
-stream = ExtResource("10_vtaks")
-autoplay = true
-
 [node name="enemies" type="Node2D" parent="." unique_id=187077183]
 position = Vector2(830, 1475)
 
 [node name="Slime" parent="enemies" unique_id=318018712 instance=ExtResource("7_u5sy4")]
 
+[node name="Slime4" parent="enemies" unique_id=1250321684 instance=ExtResource("7_u5sy4")]
+position = Vector2(-100, -1)
+
 [node name="Slime2" parent="enemies" unique_id=809474480 instance=ExtResource("7_u5sy4")]
 position = Vector2(4703, 5)
 
-[node name="Slime3" parent="enemies" unique_id=1566092866 instance=ExtResource("7_u5sy4")]
-position = Vector2(4984, 5)
+[node name="Slime5" parent="enemies" unique_id=447230105 instance=ExtResource("7_u5sy4")]
+position = Vector2(4877, 5)
 
 [connection signal="body_entered" from="scare trigger" to="scare trigger" method="_on_body_entered"]
