@@ -438,18 +438,25 @@ region_enabled = true
 region_rect = Rect2(-9.299805, 347.88705, 1460.7427, 379.08548)
 
 [node name="Grass" type="Sprite2D" parent="background" unique_id=1097657513]
-position = Vector2(5072, 1700.1255)
-scale = Vector2(3.2805538, 1.1895862)
+position = Vector2(4922.0005, 1585)
+scale = Vector2(2.595277, 0.5623559)
 texture = ExtResource("3_kvpfn")
 region_enabled = true
-region_rect = Rect2(355, 470, 360, 360)
+region_rect = Rect2(350, 350, 350, 350)
 
-[node name="Grass2" type="Sprite2D" parent="background" unique_id=1361532111]
-position = Vector2(6254, 1705.0001)
-scale = Vector2(3.2805538, 1.1895862)
+[node name="Grass2" type="Sprite2D" parent="background" unique_id=682451426]
+position = Vector2(5823.0005, 1585)
+scale = Vector2(2.595277, 0.5623559)
 texture = ExtResource("3_kvpfn")
 region_enabled = true
-region_rect = Rect2(355, 470, 360, 360)
+region_rect = Rect2(350, 350, 350, 350)
+
+[node name="Grass3" type="Sprite2D" parent="background" unique_id=38572224]
+position = Vector2(3151.0002, 1585)
+scale = Vector2(2.595277, 0.5623559)
+texture = ExtResource("3_kvpfn")
+region_enabled = true
+region_rect = Rect2(350, 350, 350, 350)
 
 [node name="TileMap" type="TileMap" parent="." unique_id=1880252725]
 tile_set = SubResource("TileSet_lbhrr")
@@ -507,7 +514,7 @@ shape = SubResource("WorldBoundaryShape2D_u5sy4")
 position = Vector2(830, 1475)
 
 [node name="Slime" parent="enemies" unique_id=318018712 instance=ExtResource("7_u5sy4")]
-position = Vector2(48, -3)
+position = Vector2(2, -1)
 
 [node name="Slime2" parent="enemies" unique_id=809474480 instance=ExtResource("7_u5sy4")]
 position = Vector2(4703, 5)
