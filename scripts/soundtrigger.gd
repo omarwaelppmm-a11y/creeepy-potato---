@@ -1,20 +1,22 @@
 extends Area2D
 
-@onready var vo_player = $AudioStreamPlayer2D
-var triggered = false
+@onready var audio_node = $AudioStreamPlayer2D
+var has_played = false
 
 func _on_body_entered(body):
-	# Match the name "Mox" from your scene tree
-	if body.name == "Mox" and not triggered:
-		play_vo(body)
+	if body is CharacterBody2D and not has_played:
+		start_the_scene(body)
 
-func play_vo(mox):
-	triggered = true
+func start_the_scene(player):
+	has_played = true
 	
-	# Lock Mox, play the clip, wait, then unlock
-	mox.can_move = false
-	vo_player.play()
+	if "can_move" in player:
+		player.can_move = false
+		player.velocity = Vector2.ZERO # Stop momentum
 	
-	await vo_player.finished
+	audio_node.play()
 	
-	mox.can_move = true
+	await audio_node.finished
+	
+	if "can_move" in player:
+		player.can_move = true
