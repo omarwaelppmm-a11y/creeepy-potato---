@@ -564,8 +564,8 @@ z_index = 5
 position = Vector2(120, 215)
 
 [node name="Camera2D" type="Camera2D" parent="Mox" unique_id=32119951]
-position = Vector2(-12, -31)
-zoom = Vector2(2, 2)
+position = Vector2(17, -16)
+zoom = Vector2(1.7, 1.7)
 limit_bottom = 2200
 position_smoothing_enabled = true
 
