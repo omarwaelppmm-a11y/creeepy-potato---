@@ -310,9 +310,8 @@ script = ExtResource("1_rvhlb")
 position = Vector2(4.9999995, 4.999999)
 scale = Vector2(1.3194444, 0.9619368)
 sprite_frames = SubResource("SpriteFrames_ilfm8")
-animation = &"dash"
+animation = &"run and attack"
 autoplay = "idle"
-frame_progress = 0.7405362
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2025419186]
 position = Vector2(18, 10)
@@ -334,6 +333,8 @@ texture = SubResource("CompressedTexture2D_qhfgl")
 lifetime = 0.09
 one_shot = true
 process_material = SubResource("ParticleProcessMaterial_qhfgl")
+
+[node name="AttackArea" type="Area2D" parent="." unique_id=449955490]
 
 [connection signal="timeout" from="DashCooldown" to="." method="_on_dash_cooldown_timeout"]
 [connection signal="timeout" from="dashtimer" to="." method="_on_dashtimer_timeout"]
