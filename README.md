@@ -1,6 +1,6 @@
 # Project Title: Creepy Potato
 
-## Event:-
+## Event:- Beest
  ### Author: Omar Wael
 
 ## How to play the game:-
