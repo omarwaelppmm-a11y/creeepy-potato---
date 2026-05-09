@@ -1,20 +1,36 @@
-# creeepy-potato---
-A game made to learn and view new skills in coding 
-WASD to move and space bar to jump 
+# Project Title: Creepy Potato
 
+## Event:-
+ ### Author: Omar Wael
 
-playable URL:- https://omarwaelppmm-a11y.itch.io/creepy-potato
+## How to play the game:-
 
-
+The game is played by moving with WASD
+A to the left and D is to the right Space bar to jump 
 Wear your headphones for smooth playing and sound on maximum
 try to focus on every detail <3
 
+playable URL:- https://omarwaelppmm-a11y.itch.io/creepy-potato
+
+## Why i made it:- 
+made it in my free time to jumpscare my friends and it worked 
+it literally jumpscared me like three times while making it.,
 
 
-features:-
-entertainment
-good game 
-entertainment again
+### Features <3
+Entertainment and Entertainment + enjoyment + pleasure
+2D game Cool animation and stunts 
 
-Author:- Omar Wael
+
+
+
 made for Beest.
+
+
+
+<img width="435" height="154" alt="Screenshot 2026-04-09 203648" src="https://github.com/user-attachments/assets/4c95c733-4697-4044-9d4d-cef634b9193d" />
+
+
+
+<img width="655" height="348" alt="Screenshot 2026-04-12 173314" src="https://github.com/user-attachments/assets/bfe9bace-0c3b-4b95-b0c7-0e4c3ab8907d" />
+
