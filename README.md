@@ -5,8 +5,9 @@
 
 ## How to play the game:-
 
-The game is played by moving with WASD
-A to the left and D is to the right Space bar to jump 
+The game is played by moving with the arrows
+ the left Arrow to go left the right arrow to go right 
+ and the space bar to jump and going to add dash with shift
 Wear your headphones for smooth playing and sound on maximum
 try to focus on every detail <3
 
